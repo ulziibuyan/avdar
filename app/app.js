@@ -6,7 +6,7 @@
 
     'use strict';
 
-    var app = require('app');
+    const {app} = require('electron');
     var MainController = require(__dirname + '/assets/js/controllers/main.js');
     var CustomTray = require(__dirname + '/assets/js//utils/customtray.js');
     var CLI = require(__dirname + '/assets/js/utils/cli.js');
@@ -69,7 +69,7 @@
         app.quit();
     };
     // TODO: Add those two variables to get feedback
-    require('crash-reporter').start({companyName: "None", submitURL: "None"});
+    require('electron').crashReporter.start({companyName: "None", submitURL: "None"});
     app.on('ready', _onAppReady.bind(this));
 
 })(process, require, __dirname);

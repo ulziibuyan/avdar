@@ -8,8 +8,8 @@
 
     var module = {};
 
-    var remote = require('remote');
-    var Menu = remote.require('menu');
+    const {remote} = require('electron');
+    const {Menu} = remote;
     var menu = null;
 
     var template = [

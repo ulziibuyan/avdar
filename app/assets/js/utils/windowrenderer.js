@@ -6,9 +6,9 @@
 
     'use strict';
 
-    var BrowserWindow = require('browser-window');
+    const {BrowserWindow} = require('electron');
     // TODO: This should be ipcRenderer but crashes at line 36 & 37
-    var ipc = require('electron').ipcMain; 
+    var ipc = require('electron').ipcMain;
     var CLI = require(__dirname + '/cli.js');
 
     var module = function()

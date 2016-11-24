@@ -6,7 +6,7 @@
 
     'use strict';
 
-    var dialog = require('dialog');
+    const {dialog} = require('electron');
 
     var module = {};
     var context = null;

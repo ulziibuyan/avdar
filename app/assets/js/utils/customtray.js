@@ -6,8 +6,7 @@
 
     'use strict';
 
-    var Tray = require('tray');
-    var Menu = require('menu');
+    const {Tray, Menu} = require('electron');
 
     var tray = null;
     var idleIcon = null;

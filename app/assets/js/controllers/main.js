@@ -9,7 +9,7 @@
 
     var ipc = require('electron').ipcMain;
     var events = require('events');
-    var dialog = require('dialog');
+
     var glob = require('glob');
     var WindowRenderer = require(__dirname + '/../utils/windowrenderer.js');
     var Backup = require(__dirname + '/../models/backup.js');
