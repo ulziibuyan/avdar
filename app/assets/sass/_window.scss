@@ -1,10 +1,9 @@
 .window
 {
-    background    : #fafafa;
+    background    : black;
     position      : absolute;
     top           : 0;
     left          : 0;
-    margin        : 15px;
     bottom        : 0;
     right         : 0;
     border-radius : 5px;
@@ -22,7 +21,6 @@
     position      : absolute;
     width         : 100%;
     height        : 46px;
-    background    : linear-gradient(to bottom, #4e4f4e, #383839);
     box-shadow    : inset 0 1px 0 #666666;
     border-bottom : 1px solid #212121;
 

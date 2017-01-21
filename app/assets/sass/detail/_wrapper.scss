@@ -34,7 +34,6 @@
             color       : #cbcbcb;
             font-size   : 17px;
             text-align  : center;
-            text-shadow : 0 2px 0 #ffffff;
             margin      : 20px 0 0 0;
         }
     }
@@ -45,7 +44,6 @@
         position   : absolute;
         width      : 100%;
         height     : 100%;
-        background : linear-gradient(to bottom, #ffffff, #fafafa);
 
         &.js-processing:after
         {
@@ -56,7 +54,6 @@
             width         : 60%;
             right         : 15px;
             top           : 61px;
-            background    : #ffffff;
             opacity       : 0.5;
             bottom        : 157px;
             border-radius : 0 0 4px 0;

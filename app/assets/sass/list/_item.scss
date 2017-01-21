@@ -2,12 +2,9 @@
 {
     position      : relative;
     border        : 1px solid #212121;
-    box-shadow    : inset 0 1px 0 #666666, 0 1px 0 #323232;
-    background    : #fefefe;
     margin        : 10px 10px 0 10px;
     border-radius : 4px;
     padding       : 6px 10px 8px 10px;
-    background    : linear-gradient(to bottom, #4e4f4e, #383839);
 
     &:active
     {
@@ -121,8 +118,7 @@
 
     &.js-active
     {
-        background : linear-gradient(to top, #7ebfdf, #759fda);
-        box-shadow : inset 0 0 1px #ffffff;
+        border: 1px solid #cbcbcb;
 
         &:active
         {
