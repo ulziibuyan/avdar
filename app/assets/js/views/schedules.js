@@ -132,7 +132,7 @@
             var items = DOM.getClosestNode(evt.currentTarget, 'js-item').querySelectorAll('.' + toggle_name);
             for (var index = 0; index < items.length; index += 1)
             {
-                items[index].style.display = items[index].getAttribute('rel') === value ? 'block' : 'none';
+                items[index].style.display = items[index].getAttribute('rel') === value ? 'table' : 'none';
             }
         };
 

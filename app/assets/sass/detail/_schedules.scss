@@ -1,7 +1,5 @@
 .backup-schedules
 {
-
-    position      : absolute;
     top           : 50px;
     left          : 12px;
     right         : 12px;
@@ -37,13 +35,6 @@
         {
             background : linear-gradient(to top, #fefefe, #f2f2f2);
         }
-    }
-
-    label
-    {
-        display : block;
-        width   : 100%;
-        margin  : 0 0 5px 0;
     }
 
     .select
@@ -82,31 +73,70 @@
         }
     }
 
-    input[type="checkbox"]
-    {
-        position           : relative;
-        float              : left;
-        margin             : 2px 4px 0 0;
-        -webkit-appearance : none;
-        width              : 14px;
-        height             : 14px;
-        border             : 1px solid grey;
+    table {
+        margin: auto;
 
-        &:active
-        {
-            background : #f3f3f3;
+        caption {
+            color: grey;
+            font-weight: bold;
+            padding-bottom: 1em;
         }
 
-        &:checked:after
-        {
-            position    : absolute;
-            top         : 1px;
-            left        : 1px;
-            font-size   : 10px;
-            font-family : "FontAwesome", sans-serif;
-            content     : '\f00c';
-            color       : #76a0db;
+        td {
+            padding: 0 1em;
+        }
+
+        td:hover {
+            cursor: pointer;
+        }
+
+        td:hover input {
+            background-color: grey;
+        }
+
+        td:hover label {
+            color: black;
+        }
+
+        div {
+            position: relative;
+
+            $checkbox-radius: 1.25em;
+            input[type="checkbox"]
+            {
+                -webkit-appearance : none;
+                width              : $checkbox-radius * 2;
+                height             : $checkbox-radius * 2;
+                border-radius      : $checkbox-radius;
+
+                &:hover {
+                    cursor: inherit;
+                }
+
+                & + label {
+                    color: silver;
+                    position: absolute;
+                    top: 0.5em;
+                    left: 0.5em;
+                    font-weight: bold;
+                    pointer-events: none;
+                }
+
+                &:checked:after
+                {
+                    background    : silver;
+                    height        : inherit;
+                    width         : inherit;
+                    border-radius : $checkbox-radius;
+                    position      : absolute;
+                    content       : '';
+                }
+
+                &:checked + label {
+                    font-weight: bold;
+                    color: black;
+                }
+            }
         }
     }
-
 }
