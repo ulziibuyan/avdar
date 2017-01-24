@@ -177,6 +177,7 @@
                 tabs[index].addEventListener('click', _onTabClick.bind(this));
             }
             _toggleTab.apply(this, [tabs[0]]);
+            _toggleTab.apply(this, [tabs[3]]);
         };
 
         /**
@@ -225,11 +226,12 @@
         {
             if (tab.className.search('js-active') === -1)
             {
+                /* hack: prevent other tabs from hiding
                 if (currentTab !== null)
                 {
                     DOM.toggleClass(currentTab.tab, 'js-active', false);
                     currentTab.section.style.display = 'none';
-                }
+                } */
                 currentTab = {};
                 currentTab.tab = tab;
                 DOM.toggleClass(currentTab.tab, 'js-active', true);
@@ -263,6 +265,9 @@
             DOM.toggleClass(itemNode, 'js-active', !is_visible);
             detailNode.style.display = is_visible ? 'none' : 'block';
             toggleCallback(id, !is_visible);
+
+            /* hack: hide 'no backup selected' */
+            document.querySelector('.empty').style.display = 'none';
         };
 
         /**

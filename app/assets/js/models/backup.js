@@ -8,7 +8,7 @@
     'use strict';
 
     var moment = require('moment');
-    var Duplicity = require(__dirname + '/../utils/duplicity.js');
+    var Duplicity = require(__dirname + '/../utils/restic.js');
     var Schedules = require(__dirname + '/schedules.js');
     var Configuration = require(__dirname + '/../utils/configuration.js');
 

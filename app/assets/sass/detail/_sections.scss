@@ -5,10 +5,7 @@
     top           : 39px;
     left          : 12px;
     right         : 12px;
-    bottom        : 155px;
     overflow-y    : auto;
-    border        : 1px solid #cbcbcb;
-    border-radius : 4px;
 
     .section
     {
@@ -17,7 +14,6 @@
         float      : left;
         width      : 100%;
         padding    : 12px 12px 6px 12px;
-        min-height : 100%;
     }
 
     .buttons
@@ -27,7 +23,6 @@
 
         button
         {
-            float         : left;
             background    : transparent;
             padding       : 3px 10px 4px 8px;
             border        : 1px solid #cbcbcb;
