@@ -5,9 +5,8 @@ html, body, div, span, p, form, input, textarea, pre, select, h1, h2, h3, table,
     border         : 0;
     outline        : 0;
 
-    font-family    : "Open Sans", sans-serif;
+    font-family    : "PTS";
     font-weight    : 400;
-    letter-spacing : 0.05em;
     box-sizing     : border-box;
 }
 
@@ -15,6 +14,23 @@ html, body
 {
     -webkit-user-select : none;
     overflow            : hidden;
+}
+
+    h2
+    {
+        color: silver;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 12px;
+        letter-spacing: 3px;
+        padding-top: 1em;
+        position: relative;
+    }
+
+@font-face {
+    font-family: 'PTS';
+    font-style: normal;
+    src: url(../fonts/PTS55F.ttf) format('ttf');
 }
 
 @font-face
