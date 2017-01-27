@@ -139,11 +139,11 @@
                     fields[i] = new String(lines[i + 2]).split('  ');
                 }
                 data.backup_sets = '' + (lines.length - 2);
-                data.backup_volumes = '-- N/A on Restic --'
+                /* data.backup_volumes = '--'; */
                 data.chain_start_time = fields[0][1];
                 data.chain_end_time = fields[fields.length - 1][1];
-                data.source_files = '-- N/A on Restic --'
-                data.source_file_size = '-- N/A on Restic --'
+                data.source_files = '--';
+                data.source_file_size = '--';
                 process = null;
                 callback(error !== null, data);
             });

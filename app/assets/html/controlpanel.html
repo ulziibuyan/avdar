@@ -10,9 +10,10 @@
         <div class="window">
             <div class="toolbar">
                 <button class="close js-window-close"><i class="fa fa-plus"></i></button>
-                <h1 class="js-window-handler">Vuplicity</h1>
+                <h1 class="js-window-handler">АВДАР</h1>
             </div>
             <div class="backups-list-wrapper">
+                <h2>НӨӨЦЛӨХ ЖАГСААЛТ</h2>
                 <div class="list js-backups-list"></div>
                 <div class="actions">
                     <button class="js-add-backup"><i class="fa fa-plus"></i></button>
@@ -65,21 +66,22 @@
                 <pre class="js-history"></pre>
             </div>
             <div class="backup-sections">
+                <h2>ТӨЛӨВ</h2>
                 <div class="section js-section" rel="status">
                     <p class="col1">
-                        Contained backup sets
+                        архивын хэмжээ:
                         <span class="right js-status" rel="backup_sets">--</span>
                     </p>
                     <p class="col1">
-                        Contained volumes
-                        <span class="right js-status" rel="backup_volumes">--</span>
+                        нууцлах шифр:
+                        <span class="right js-status" rel="backup_volumes">AES256&ndash;256 бит</span>
                     </p>
                     <p class="col1">
-                        Chain start time
+                        архивын эхлэл:
                         <span class="right js-status" rel="chain_start_time">--</span>
                     </p>
                     <p class="col1">
-                        Chain end time
+                        архивын төгсгөл:
                         <span class="right js-status" rel="chain_end_time">--</span>
                     </p>
                     <p class="col1">
@@ -172,14 +174,17 @@
             </span>
         </script>
         <script type="text/template" class="js-schedules-template" rel="item js-item">
-            <div class="select">
+            <h2>ХУВААРЬ</h2>
+            <div class="select"
+            style="display: none;">
                 <select class="js-toggle js-schedules-option" name="interval_basis" rel="js-basis">
                     <option value="weekly">On a weekly basis</option>
                     <option value="monthly">On a monthly basis</option>
                 </select>
             </div>
             <div class="col1">
-                <div class="select">
+                <div class="select"
+                style="display: none">
                     <select class="js-schedules-option" name="backup_type">
                         <option value="auto">Automatic backup</option>
                         <option value="full">Full backup</option>
@@ -190,9 +195,6 @@
                 </button>
             </div>
             <table class="js-basis" rel="weekly">
-                <thead>
-                    <caption>ХУВААРЬ</caption>
-                </thead>
                 <tbody>
                     <tr>
                         <td><div>
@@ -274,7 +276,8 @@
                 </div>
             </div>
             <div class="col1">
-                <div class="select">
+                <div class="select"
+                style="display: none">
                     <select class="js-toggle js-schedules-option" name="interval_type" rel="js-interval">
                         <option value="interval">Every</option>
                         <option value="date" selected>At</option>
@@ -294,46 +297,45 @@
                 </div>
                 <div class="select js-interval" rel="date">
                     <select class="js-schedules-option" name="date_hours">
-                        <option value="00">00h</option>
-                        <option value="01">01h</option>
-                        <option value="02">02h</option>
-                        <option value="03">03h</option>
-                        <option value="04">04h</option>
-                        <option value="05">05h</option>
-                        <option value="06">06h</option>
-                        <option value="07">07h</option>
-                        <option value="08">08h</option>
-                        <option value="09">09h</option>
-                        <option value="10">10h</option>
-                        <option value="11">11h</option>
-                        <option value="12">12h</option>
-                        <option value="13">13h</option>
-                        <option value="14">14h</option>
-                        <option value="15">15h</option>
-                        <option value="16">16h</option>
-                        <option value="17">17h</option>
-                        <option value="18">18h</option>
-                        <option value="19">19h</option>
-                        <option value="20">20h</option>
-                        <option value="21">21h</option>
-                        <option value="22">22h</option>
-                        <option value="23">23h</option>
+                        <option value="00">00</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
                     </select>
-                </div>
-                <div class="select js-interval" rel="date">
+                    :
                     <select class="js-schedules-option" name="date_minutes">
-                        <option value="00">00mn</option>
-                        <option value="05">05mn</option>
-                        <option value="10">10mn</option>
-                        <option value="15">15mn</option>
-                        <option value="20">20mn</option>
-                        <option value="25">25mn</option>
-                        <option value="30">30mn</option>
-                        <option value="35">35mn</option>
-                        <option value="40">40mn</option>
-                        <option value="45">45mn</option>
-                        <option value="50">50mn</option>
-                        <option value="55">55mn</option>
+                        <option value="00">00</option>
+                        <option value="05">05</option>
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                        <option value="35">35</option>
+                        <option value="40">40</option>
+                        <option value="45">45</option>
+                        <option value="50">50</option>
+                        <option value="55">55</option>
                     </select>
                 </div>
             </div>

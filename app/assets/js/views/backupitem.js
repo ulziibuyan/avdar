@@ -177,6 +177,8 @@
                 tabs[index].addEventListener('click', _onTabClick.bind(this));
             }
             _toggleTab.apply(this, [tabs[0]]);
+
+            /* hack: also show schedules section */
             _toggleTab.apply(this, [tabs[3]]);
         };
 
@@ -268,6 +270,10 @@
 
             /* hack: hide 'no backup selected' */
             document.querySelector('.empty').style.display = 'none';
+
+            /* hack: auto status refresh on backup select */
+            if (!is_visible)
+                detailNode.querySelector('.js-action[rel="refresh-status"]').click()
         };
 
         /**

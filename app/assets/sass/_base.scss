@@ -5,7 +5,7 @@ html, body, div, span, p, form, input, textarea, pre, select, h1, h2, h3, table,
     border         : 0;
     outline        : 0;
 
-    font-family    : "PTS";
+    font-family    : 'ParaType Sans';
     font-weight    : 400;
     box-sizing     : border-box;
 }
@@ -28,9 +28,21 @@ html, body
     }
 
 @font-face {
-    font-family: 'PTS';
-    font-style: normal;
-    src: url(../fonts/PTS55F.ttf) format('ttf');
+    font-family: 'ParaType Sans';
+    font-weight: normal;
+    src: url('../fonts/PTS55F.ttf');
+}
+
+@font-face {
+    font-family: 'ParaType Sans';
+    font-weight: bold;
+    src: url('../fonts/PTS75F.ttf');
+}
+
+@font-face {
+    font-family: 'ParaType Mono';
+    font-weight: normal;
+    src: url('../fonts/PTM55F.ttf');
 }
 
 @font-face

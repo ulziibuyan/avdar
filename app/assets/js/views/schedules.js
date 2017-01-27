@@ -119,6 +119,21 @@
                 toggles[index].addEventListener('change', _onToggle.bind(this));
                 toggles[index].dispatchEvent(new Event('change'));
             }
+
+            /* hack: changing input/select value triggers save */
+            var saveButton = schedulesNode.querySelector('.js-action')
+            var inputList = schedulesNode.querySelectorAll('input')
+            for (let input of inputList) {
+                input.addEventListener('change', function() {
+                    saveButton.click()
+                })
+            }
+            var selectList = schedulesNode.querySelectorAll('select')
+            for (let select of selectList) {
+                select.addEventListener('change', function() {
+                    saveButton.click()
+                })
+            }
         };
 
         /**

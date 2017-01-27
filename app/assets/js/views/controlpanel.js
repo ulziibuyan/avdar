@@ -13,6 +13,7 @@
     var addBackupNode = null;
     var removeBackupNode = null;
     var currentBackupID = null;
+    require('electron-css-reload')();
 
     module.init = function()
     {
@@ -157,5 +158,5 @@
     };
 
     window.ControlPanel = module;
-    
+
 })(window, document, require('electron').ipcRenderer, BackupItem);
